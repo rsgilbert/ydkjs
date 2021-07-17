@@ -15,7 +15,7 @@ var you = {
     name: "Reader"
 }
 
-console.log(identify.call(me)); // GILBERT
+console.log(identify(me)); // GILBERT
 identify.call(you); // READER
 
 speak.call(me); // Hello, I'm GILBERT

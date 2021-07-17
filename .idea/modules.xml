@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ydks.iml" filepath="$PROJECT_DIR$/.idea/ydks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ydkjs/.idea/ydkjs.iml" filepath="$PROJECT_DIR$/../ydkjs/.idea/ydkjs.iml" />
     </modules>
   </component>
 </project>
