@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function getProps(obj, prop) {
+    return Object.getOwnPropertyDescriptor(obj, prop);}
+
+function log(x) { console.log(x) }
+
+
