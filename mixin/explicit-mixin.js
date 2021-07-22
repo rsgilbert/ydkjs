@@ -24,10 +24,14 @@ let Car = mixin(Vehicle, {
     engines: 5,
     wheels: 4,
     drive: function drive() {
+        // Pseudopolymorphism
+        // Absolute (not relative) reference
         Vehicle.drive.call(this);
         console.log('Rolling on all ', this.wheels, ' wheels');
     }
 })
+
+
 
 Vehicle.drive()
 log('**')

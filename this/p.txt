@@ -32,7 +32,7 @@ Object [global] {
          'https://nodejs.org/download/release/v10.19.0/node-v10.19.0-headers.tar.gz' },
      argv:
       [ '/usr/bin/node',
-        '/home/ssenyonjo/Projects/ydkjs/this/play.js' ],
+        '/home/ssenyonjo/Projects/ydkjs/this/shadowing.js' ],
      execArgv: [],
      env:
       { SHELL: '/bin/bash',
@@ -277,7 +277,7 @@ Object [global] {
         id: '.',
         exports: {},
         parent: null,
-        filename: '/home/ssenyonjo/Projects/ydkjs/this/play.js',
+        filename: '/home/ssenyonjo/Projects/ydkjs/this/shadowing.js',
         loaded: false,
         children: [],
         paths: [Array] } },
