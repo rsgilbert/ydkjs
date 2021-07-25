@@ -181,8 +181,10 @@ log(F5.prototype)
 let f55 = new F5.prototype.constructor();
 log(f55)
 F5.prototype.sleep = 3
+F5.prototype.age = 2
 log(f55.sleep)
 log(Object.getOwnPropertyDescriptors(F5.prototype))
 log(f55.__proto__)
 log(F5.prototype)
 log(f5.__proto__ === F5.prototype)
+log(f55.age)
