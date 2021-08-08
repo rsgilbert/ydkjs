@@ -101,7 +101,7 @@ let i = 1 / 0
 
 // log(Number.MAX_VALUE + (Math.pow(2, 969) * 2 - 1))
 log(Number.POSITIVE_INFINITY + Number.NEGATIVE_INFINITY)
-*/
+
 
 let a = 0 / -3;
 log(a)
@@ -131,3 +131,32 @@ function isNegZero(n) {
 
 log(isNegZero(0))
 log(isNegZero(-0))
+*/
+// special equality
+log(Object.is(NaN, NaN))
+log(Object.is((0/0), 'ka' * 3))
+log(Object.is(3, NaN))
+log(Object.is(-0, 0))
+log(Object.is(-0, -0))
+log(Object.is({a: 3}, { a: 3}))
+log({ a: 3} === { a: 3})
+
+// Object.is polyfill
+function isAbsolutelyEqual(v1, v2) {
+    // Test for -0
+    if(v1 === 0 && v2 === 0) {
+        return 1 / v1 === 1 / v2;
+    }
+    // Test for NaN
+    if(v1 !== v1) {
+        return v2 !== v2
+    }
+    // Otherwise
+    return v1 === v2;
+}
+
+log(isAbsolutelyEqual(0, -0))
+log(isAbsolutelyEqual(-0, -0))
+log(isAbsolutelyEqual(NaN, 3 / 'green'))
+log(isAbsolutelyEqual(2, 2))
+log(isAbsolutelyEqual(NaN, 2))
