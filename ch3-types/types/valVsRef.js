@@ -53,7 +53,7 @@ function f4(x) {
     log('f4 before:',x);
     x = x + 1;
     log('f4 after:', x)
-}
+} 
 
 let j = 2;
 let k = new Number(a);
